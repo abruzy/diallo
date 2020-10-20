@@ -1,16 +1,15 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
-// const linkClassNames = 'text-dark-more px-2 mx-1 font-medium';
+const linkClassNames = 'text-dark-more px-2 mx-1 font-medium';
 
 function NavBar() {
   return (
     <header className="banner min-h-screen">
       <nav className="navbar fixed bg-white flex items-center justify-center h-16 w-full top-0 left-0">
-        <a href="#blog" className="text-dark-more px-2 mx-1 font-medium">Blog</a>
-        <a href="#portfolio" className="text-dark-more px-2 mx-1 font-medium">Portfolio</a>
-        <a href="#about" className="text-dark-more px-2 mx-1 font-medium">About</a>
-        <a href="#contact" className="text-dark-more px-2 mx-1 font-medium">Contact</a>
+        <a href="#blog" className={linkClassNames}>Blog</a>
+        <a href="#portfolio" className={linkClassNames}>Portfolio</a>
+        <a href="#about" className={linkClassNames}>About</a>
+        <a href="#contact" className={linkClassNames}>Contact</a>
       </nav>
       <div className="pt-56 flex flex-col justify-center items-center">
         <h1 className="text-5xl font-bold">
