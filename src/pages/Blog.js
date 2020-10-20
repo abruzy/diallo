@@ -1,11 +1,11 @@
 import React from 'react';
 
-function index() {
+function Blog() {
   return (
     <div>
-      Home
+      Blog
     </div>
   );
 }
 
-export default index;
+export default Blog;
