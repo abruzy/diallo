@@ -2,6 +2,40 @@ import React from 'react';
 
 const linkClassNames = 'text-dark-more px-2 mx-1 font-medium';
 
+// const navEl = document.querySelector('.navbar');
+// let lastScrollPosition = window.pageYOffset;
+
+// function effect1() {
+//   const scrollHeight = window.pageYOffset;
+
+//   if (scrollHeight >= 1200) {
+//     navEl.style.top = 0;
+//   } else if (scrollHeight > 150) {
+//     navEl.style.top = '-4rem';
+//   } else {
+//     navEl.style.top = 0;
+//   }
+// }
+
+// function effect2() {
+//   const scrollHeight = window.pageYOffset;
+
+//   const difference = scrollHeight - lastScrollPosition;
+//   lastScrollPosition = scrollHeight;
+
+//   if (Math.abs(difference) < 5) return;
+
+//   if (scrollHeight <= 150 || difference < 0) {
+//     navEl.style.top = 0;
+//     navEl.classList.add('shadow-xs');
+//   } else {
+//     navEl.style.top = '-4rem';
+//     navEl.classList.remove('shadow-xs');
+//   }
+// }
+
+// window.addEventListener('scroll', () => effect2());
+
 function NavBar() {
   return (
     <header className="banner min-h-screen">
@@ -23,19 +57,19 @@ function NavBar() {
         </p>
 
         <div className="flex items-center justify-center my-2">
-          <a href="https://github.com/abruzy" target="_blank" className="p-2 mx-1">
+          <a href="https://github.com/abruzy" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/github.svg" alt="GitHub" />
           </a>
-          <a href="#linkekdin" target="_blank" className="p-2 mx-1">
+          <a href="#linkekdin" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/in.svg" alt="LinkedIn" />
           </a>
-          <a href="#angelist" target="_blank" className="p-2 mx-1">
+          <a href="#angelist" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/angel.svg" alt="AngelList" />
           </a>
-          <a href="https://twitter.com/abruzy01" target="_blank" className="p-2 mx-1">
+          <a href="https://twitter.com/abruzy01" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/tw.svg" alt="Twitter" />
           </a>
-          <a href="#medium" target="_blank" className="p-2 mx-1">
+          <a href="#medium" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/medium.svg" alt="Medium" />
           </a>
         </div>
