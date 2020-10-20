@@ -24,4 +24,19 @@ header.banner {
   background-repeat: no-repeat;
 }
 
+input:focus, button:focus, textarea:focus {
+  outline: none;
+}
+
+.contact {
+  background: url(/vectors/cube-vect.svg) bottom left, 
+              url(/vectors/stick-vect.svg) bottom right;
+  background-repeat: no-repeat;
+}
+
+.contact .contact-message {
+  background: url(/vectors/poly-vect.svg) bottom left;
+  background-repeat: no-repeat;
+}
+
 @import "tailwindcss/utilities";
