@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 const linkClassNames = 'text-dark-more px-2 mx-1 font-medium';
