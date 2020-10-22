@@ -1,46 +1,35 @@
 /* eslint-disable max-len */
-import React from 'react';
+import React, { useState } from 'react';
+
+import useDocumentScrollThrottled from '../utils/useDocumentScrollThrottled';
 
 const linkClassNames = 'text-dark-more px-2 mx-1 font-medium';
 
-// const navEl = document.querySelector('.navbar');
-// let lastScrollPosition = window.pageYOffset;
-
-// function effect1() {
-//   const scrollHeight = window.pageYOffset;
-
-//   if (scrollHeight >= 1200) {
-//     navEl.style.top = 0;
-//   } else if (scrollHeight > 150) {
-//     navEl.style.top = '-4rem';
-//   } else {
-//     navEl.style.top = 0;
-//   }
-// }
-
-// function effect2() {
-//   const scrollHeight = window.pageYOffset;
-
-//   const difference = scrollHeight - lastScrollPosition;
-//   lastScrollPosition = scrollHeight;
-
-//   if (Math.abs(difference) < 5) return;
-
-//   if (scrollHeight <= 150 || difference < 0) {
-//     navEl.style.top = 0;
-//     navEl.classList.add('shadow-xs');
-//   } else {
-//     navEl.style.top = '-4rem';
-//     navEl.classList.remove('shadow-xs');
-//   }
-// }
-
-// window.addEventListener('scroll', () => effect2());
-
 function NavBar() {
+  const [shouldHdeNavBar, setShouldHdeNavBar] = useState(false);
+  const [shouldShowShadow, setShouldShowShadow] = useState(false);
+
+  const MINIMUM_SCROLL = 80;
+  const TIMEOUT_DELAY = 400;
+
+  useDocumentScrollThrottled(callbackData => {
+    const { previousScrollTop, currentScrollTop } = callbackData;
+    const isScrolledDown = previousScrollTop < currentScrollTop;
+    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
+
+    setShouldShowShadow(currentScrollTop > 150);
+
+    setTimeout(() => {
+      setShouldHdeNavBar(isScrolledDown && isMinimumScrolled);
+    }, TIMEOUT_DELAY);
+  });
+
+  const shadowStyle = shouldShowShadow ? 'shadow' : '';
+  const hiddenStyle = shouldHdeNavBar ? 'hidden' : '';
+
   return (
     <header className="banner min-h-screen">
-      <nav className="navbar fixed bg-white flex items-center justify-center h-16 w-full top-0 left-0">
+      <nav className={`navbar ${hiddenStyle} ${shadowStyle} navbar fixed bg-white flex items-center justify-center h-16 w-full top-0 left-0`}>
         <a href="#blog" className={linkClassNames}>Blog</a>
         <a href="#portfolio" className={linkClassNames}>Portfolio</a>
         <a href="#about" className={linkClassNames}>About</a>

@@ -7,6 +7,14 @@ code {
     monospace;
 }
 
+.header.shadow {
+  box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+
+.navbar.hidden {
+  transform: translateY(-110%);
+}
+
 .navbar {
   transition: top ease-in-out .3s;
 }
