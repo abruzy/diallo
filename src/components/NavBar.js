@@ -50,16 +50,16 @@ function NavBar() {
           <a href="https://github.com/abruzy" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/github.svg" alt="GitHub" />
           </a>
-          <a href="#linkekdin" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
+          <a href="https://www.linkedin.com/in/abubakardiallo" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/in.svg" alt="LinkedIn" />
           </a>
-          <a href="#angelist" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
+          <a href="https://angel.co/u/abruzy" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/angel.svg" alt="AngelList" />
           </a>
           <a href="https://twitter.com/abruzy01" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/tw.svg" alt="Twitter" />
           </a>
-          <a href="#medium" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
+          <a href="https://medium.com/@dialloabubakar5861" rel="noopener noreferrer" target="_blank" className="p-2 mx-1">
             <img src="/vectors/medium.svg" alt="Medium" />
           </a>
         </div>

@@ -6,16 +6,16 @@ function Footer() {
       <a href="https://github.com/abruzy" target="_blank" rel="noopener noreferrer" className="p-2 mx-1">
         <img src="/vectors/github.svg" alt="GitHub" />
       </a>
-      <a href="#df" target="_blank" rel="noopener noreferrer" className="p-2 mx-1">
+      <a href="https://www.linkedin.com/in/abubakardiallo" target="_blank" rel="noopener noreferrer" className="p-2 mx-1">
         <img src="/vectors/in.svg" alt="LinkedIn" />
       </a>
-      <a href="#fs" target="_blank" rel="noopener noreferrer" className="p-2 mx-1">
+      <a href="https://angel.co/u/abruzy" target="_blank" rel="noopener noreferrer" className="p-2 mx-1">
         <img src="/vectors/angel.svg" alt="AngelList" />
       </a>
       <a href="https://twitter.com/abruzy01" target="_blank" rel="noopener noreferrer" className="p-2 mx-1">
         <img src="/vectors/tw.svg" alt="Twitter" />
       </a>
-      <a href="#sf" target="_blank" rel="noopener noreferrer" className="p-2 mx-1">
+      <a href="https://medium.com/@dialloabubakar5861" target="_blank" rel="noopener noreferrer" className="p-2 mx-1">
         <img src="/vectors/medium.svg" alt="Medium" />
       </a>
     </footer>

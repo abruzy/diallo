@@ -10,9 +10,11 @@ function About() {
           I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
           don’t hestiate to contact me.
         </p>
-        <button type="button" className="p-3 my-8 rounded bg-normal-green text-white focus:outline-none focus:bg-darker-green hover:shadow-xl">
-          Get My Resume
-        </button>
+        <a href="https://docs.google.com/document/d/1M_TyXPYW_L7ClD506XA37VeqX-8xGiOpTLbj9NDGfyQ/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
+          <button type="button" className="p-3 my-8 rounded bg-normal-green text-white focus:outline-none focus:bg-darker-green hover:shadow-xl">
+            Get My Resume
+          </button>
+        </a>
       </div>
 
       <div className="grid grid-cols-3 col-gap-6 row-gap-6 max-w-6xl mx-auto mt-10">
