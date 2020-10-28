@@ -8,7 +8,7 @@
 
 > Abubakar Full Stack Developer
 
-![apple-clone](./apple-clone.png)
+![portfolio](./apple-clone.png)
 
 ## Built With
 
