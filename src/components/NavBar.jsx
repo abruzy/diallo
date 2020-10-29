@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 import useDocumentScrollThrottled from '../utils/useDocumentScrollThrottled';
 
-const linkClassNames = 'text-dark-more px-2 mx-1 font-medium';
+const linkClassNames = 'text-dark-more hidden md:flex px-2 mx-1 font-medium';
 
 function NavBar() {
   const [shouldHdeNavBar, setShouldHdeNavBar] = useState(false);
@@ -28,20 +28,23 @@ function NavBar() {
   const hiddenStyle = shouldHdeNavBar ? 'hidden' : '';
 
   return (
-    <header className="banner min-h-screen">
-      <nav className={`navbar ${hiddenStyle} ${shadowStyle} navbar fixed bg-white flex items-center justify-center h-16 w-full top-0 left-0`}>
+    <header className="banner sm:min-h-screen">
+      <nav className={`navbar ${hiddenStyle} ${shadowStyle} navbar fixed bg-white flex items-center justify-between md:justify-center px-10 h-20 md:h-16 w-full top-0 left-0`}>
+        <span className="text-xl font-semibold md:hidden">Welcome</span>
         <a href="#blog" className={linkClassNames}>Blog</a>
         <a href="#portfolio" className={linkClassNames}>Portfolio</a>
         <a href="#about" className={linkClassNames}>About</a>
         <a href="#contact" className={linkClassNames}>Contact</a>
+        <img src="/vectors/menu.svg" alt="Menu" className="md:hidden" />
       </nav>
-      <div className="pt-56 flex flex-col justify-center items-center">
-        <h1 className="text-5xl font-bold">
+
+      <div className="pt-56 px-5 flex flex-col justify-center items-center">
+        <h1 className="text-5xl font-bold text-center">
           <span className="tracking-normal">Hey there. I’m Abubakar.</span>
-          <br />
+          <br className="hidden lg:flex" />
           <span className="text-normal-green tracking-wide">I’m a software developer</span>
         </h1>
-        <p className="max-w-3xl mx-auto my-4 text-xl text-center">
+        <p className="lg:max-w-3xl mx-auto my-4 text-xl text-center">
           I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
           don’t hestiate to contact me.
         </p>

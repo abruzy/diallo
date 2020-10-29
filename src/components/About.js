@@ -1,9 +1,31 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable max-len */
 import React from 'react';
 
+const tools = [
+  {
+    pics: '/vectors/languages.svg',
+    alt: 'Languages',
+    title: 'Languages',
+    languages: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
+  },
+  {
+    pics: '/vectors/frameworks.svg',
+    alt: 'Frameworks',
+    title: 'Frameworks',
+    languages: ['Bootstrap', 'Ruby on rails', 'RSpec', 'Capybara', 'Selenium'],
+  },
+  {
+    pics: '/vectors/skills.svg',
+    alt: 'Skills',
+    title: 'Skills',
+    languages: ['Codekit', 'Github', 'Codepen', 'Gitlab', 'Terminal'],
+  },
+];
+
 function About() {
   return (
-    <section id="about" className="about pb-20">
+    <section id="about" className="about pb-20 px-5">
       <div className="intro pt-20 flex flex-col items-center">
         <h2 className="text-4xl font-medium text-center mb-5">About me</h2>
         <p className="max-w-3xl mx-auto text-xl text-center text-normal text-fade-gray">
@@ -17,50 +39,23 @@ function About() {
         </a>
       </div>
 
-      <div className="grid grid-cols-3 col-gap-6 row-gap-6 max-w-6xl mx-auto mt-10">
-        <div className="bg-light-green border border-gray-200 rounded py-12 flex flex-col items-center">
-          <div className="bg-white h-20 w-20 rounded-full flex items-center justify-center shadow-xl mb-10">
-            <img src="vectors/languages.svg" alt="Languages" />
-          </div>
-          <h3 className="font-medium text-2xl text-faded-gray">Languages</h3>
+      <div className="grid px-5 lg:grid-cols-3 col-gap-6 row-gap-6 max-w-6xl mx-auto mt-10">
+        {
+          tools.map((tool, toolIdx) => (
+            <div key={toolIdx} className="bg-light-green border border-gray-200 rounded py-12 flex flex-col items-center">
+              <div className="bg-white h-20 w-20 rounded-full flex items-center justify-center shadow-xl mb-10">
+                <img src={tool.pics} alt={tool.alt} />
+              </div>
+              <h3 className="font-medium text-2xl text-faded-gray">{tool.title}</h3>
 
-          <div className="flex flex-wrap items-center mt-4 text-xs text-dark-green">
-            <span className="p-2 m-1 bg-white rounded">Javascript</span>
-            <span className="p-2 m-1 bg-white rounded">Ruby</span>
-            <span className="p-2 m-1 bg-white rounded">HTML</span>
-            <span className="p-2 m-1 bg-white rounded">CSS</span>
-          </div>
-        </div>
-
-        <div className="bg-light-green border border-gray-200 rounded py-12 flex flex-col items-center">
-          <div className="bg-white h-20 w-20 rounded-full flex items-center justify-center shadow-xl mb-10">
-            <img src="vectors/frameworks.svg" alt="Languages" />
-          </div>
-          <h3 className="font-medium text-2xl text-faded-gray">Frameworks</h3>
-
-          <div className="flex flex-wrap justify-center items-center mt-4 text-xs text-dark-green">
-            <span className="p-2 m-1 bg-white rounded">Bootstrap</span>
-            <span className="p-2 m-1 bg-white rounded">Ruby on rails</span>
-            <span className="p-2 m-1 bg-white rounded">RSpec</span>
-            <span className="p-2 m-1 bg-white rounded">Capybara</span>
-            <span className="p-2 m-1 bg-white rounded">Selenium</span>
-          </div>
-        </div>
-
-        <div className="bg-light-green border border-gray-200 rounded py-12 flex flex-col items-center">
-          <div className="bg-white h-20 w-20 rounded-full flex items-center justify-center shadow-xl mb-10">
-            <img src="vectors/skills.svg" alt="Languages" />
-          </div>
-          <h3 className="font-medium text-2xl text-faded-gray">Skills</h3>
-
-          <div className="flex flex-wrap items-center mt-4 text-xs text-dark-green">
-            <span className="p-2 m-1 bg-white rounded">Codekit</span>
-            <span className="p-2 m-1 bg-white rounded">Github</span>
-            <span className="p-2 m-1 bg-white rounded">Codepen</span>
-            <span className="p-2 m-1 bg-white rounded">Gitlab</span>
-            <span className="p-2 m-1 bg-white rounded">Terminal</span>
-          </div>
-        </div>
+              <div className="flex flex-wrap justify-center items-center mt-4 text-xs text-dark-green">
+                {
+              tool.languages.map((lang, langIdx) => <span key={langIdx} className="p-2 m-1 bg-white rounded">{lang}</span>)
+            }
+              </div>
+            </div>
+          ))
+        }
       </div>
     </section>
   );
