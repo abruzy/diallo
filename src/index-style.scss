@@ -610,6 +610,30 @@ code {
     monospace;
 }
 
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  width: 7px;
+  z-index: 2;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  background: #6B726F;
+  border-radius: 1rem;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+  background: #56BF98;
+  scroll-behavior: smooth;
+}
+
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 header.banner {
   background-attachment: fixed;
   background-size: cover;
@@ -632,9 +656,12 @@ header.banner {
 }
 
 .about .intro {
-  background: url(/vectors/origami-1.svg) bottom left, 
+  @media (min-width: 640px) {
+    background: url(/vectors/origami-1.svg) bottom left, 
               url(/vectors/origami-2.svg) top right;
-  background-repeat: no-repeat;
+
+    background-repeat: no-repeat;
+  }
 }
 
 input:focus, button:focus, textarea:focus {
@@ -642,14 +669,24 @@ input:focus, button:focus, textarea:focus {
 }
 
 .contact {
-  background: url(/vectors/cube-vect.svg) bottom left, 
+  @media (min-width: 640px) {
+    background: url(/vectors/cube-vect.svg) bottom left, 
               url(/vectors/stick-vect.svg) bottom right;
-  background-repeat: no-repeat;
+
+    background-repeat: no-repeat;
+  }
 }
 
 .contact .contact-message {
-  background: url(/vectors/poly-vect.svg) bottom left;
-  background-repeat: no-repeat;
+  @media (min-width: 640px) {
+    background: url(/vectors/poly-vect.svg) bottom left;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.close {
+  color: #67798e;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

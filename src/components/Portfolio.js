@@ -1,5 +1,7 @@
 /* eslint-disable react/no-array-index-key */
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import Modall from './Modall';
 
 const projects = [
   {
@@ -40,14 +42,19 @@ const projects = [
   },
 ];
 
-function Portfolio() {
-  return (
-    <section id="portfolio" className="works py-20">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-medium text-center mb-10">My Recent Works</h2>
+Modal.setAppElement('#root');
 
-        <div className="grid md:grid-cols-2 px-5 lg:grid-cols-3 col-gap-6 row-gap-5">
-          {
+function Portfolio() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  return (
+    <>
+      <section id="portfolio" className="works py-20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-medium text-center mb-10">My Recent Works</h2>
+
+          <div className="grid md:grid-cols-2 px-5 lg:grid-cols-3 col-gap-6 row-gap-5">
+            {
             projects.map((project, projectIdx) => (
               <div key={projectIdx} className="shadow-xs rounded hover:shadow-xl border border-gray-200">
                 <div className="h-64 bg-green-200">
@@ -62,14 +69,16 @@ function Portfolio() {
                     }
                   </div>
 
-                  <button type="button" className="p-2 my-2 rounded bg-normal-green text-white focus:outline-none focus:bg-darker-green hover:shadow-xl">See project</button>
+                  <button type="button" className="p-2 my-2 rounded bg-normal-green text-white focus:outline-none focus:bg-darker-green hover:shadow-xl" onClick={() => setModalIsOpen(true)}>See project</button>
                 </div>
               </div>
             ))
           }
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <Modall modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
+    </>
   );
 }
 
