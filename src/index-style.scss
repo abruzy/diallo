@@ -612,7 +612,7 @@ code {
 
 body::-webkit-scrollbar,
 html::-webkit-scrollbar {
-  width: 7px;
+  width: 6px;
   z-index: 2;
   scroll-behavior: smooth;
 }
@@ -687,6 +687,11 @@ input:focus, button:focus, textarea:focus {
 
 .close {
   color: #67798e;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
