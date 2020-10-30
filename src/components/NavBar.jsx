@@ -36,7 +36,9 @@ function NavBar() {
       <a href="#portfolio" className={linkClassNames}>Portfolio</a>
       <a href="#about" className={linkClassNames}>About</a>
       <a href="#contact" className={linkClassNames}>Contact</a>
-      <img src="/vectors/menu.svg" alt="Menu" className="md:hidden" onClick={() => setModalIsOpen(true)} />
+      <button type="button" onClick={() => setModalIsOpen(true)}>
+        <img src="/vectors/menu.svg" alt="Menu" className="md:hidden" />
+      </button>
       <NavModal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
     </nav>
   );

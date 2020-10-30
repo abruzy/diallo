@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import './App.scss';
-import Modal from './components/Modall';
 
 function App() {
   return (

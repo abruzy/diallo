@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 
 function Modall({ modalIsOpen, setModalIsOpen }) {
@@ -38,5 +39,10 @@ function Modall({ modalIsOpen, setModalIsOpen }) {
     </Modal>
   );
 }
+
+Modall.propTypes = {
+  modalIsOpen: PropTypes.bool.isRequired,
+  setModalIsOpen: PropTypes.func.isRequired,
+};
 
 export default Modall;
