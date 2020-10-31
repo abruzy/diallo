@@ -52,11 +52,11 @@ function Modall({
             {title}
           </h2>
 
-          <a href={liveUrl} type="button" className={`${modalClassNames} mr-3`}>
+          <a href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-3`}>
             See live
             <img src="/vectors/live.svg" alt="see live" className="pl-2" />
           </a>
-          <a href={githubLink} type="button" className={modalClassNames}>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" type="button" className={modalClassNames}>
             See Source
             <img src="/vectors/source.png" alt="source" className="pl-2" />
           </a>

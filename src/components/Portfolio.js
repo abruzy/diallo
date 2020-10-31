@@ -15,7 +15,7 @@ const projects = [
     languages: ['Ruby on rails', 'HTML/CSS', 'React', 'Redux'],
   },
   {
-    pics: '/images/newsweekClone.png',
+    pics: '/images/newsweek-clone.png',
     alt: 'newsweek',
     title: 'Newsweek Clone',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam. Unde dolores delectus soluta, nesciunt quisquam repudiandae vitae iste nobis beatae, ipsam at doloribus. Sapiente consectetur dolore rerum nam.Sint hic velit tempora reprehenderit qui? Vero nesciunt quasi nulla saepe commodi aut ullam fugiat error molestias iusto! Quia architecto placeat rem nostrum commodi, possimus quis corrupti dignissimos voluptatibus tempora?',
@@ -24,7 +24,7 @@ const projects = [
     languages: ['HTML5', 'CSS3', 'Bootstrap'],
   },
   {
-    pics: '/images/facebookReplica.png',
+    pics: '/images/facebook-login.png',
     alt: 'fakebook',
     title: 'FakeBook Replica',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam. Unde dolores delectus soluta, nesciunt quisquam repudiandae vitae iste nobis beatae, ipsam at doloribus. Sapiente consectetur dolore rerum nam.Sint hic velit tempora reprehenderit qui? Vero nesciunt quasi nulla saepe commodi aut ullam fugiat error molestias iusto! Quia architecto placeat rem nostrum commodi, possimus quis corrupti dignissimos voluptatibus tempora?',
@@ -37,12 +37,12 @@ const projects = [
     alt: 'space-shooter',
     title: 'Space Shooter',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam. Unde dolores delectus soluta, nesciunt quisquam repudiandae vitae iste nobis beatae, ipsam at doloribus. Sapiente consectetur dolore rerum nam.Sint hic velit tempora reprehenderit qui? Vero nesciunt quasi nulla saepe commodi aut ullam fugiat error molestias iusto! Quia architecto placeat rem nostrum commodi, possimus quis corrupti dignissimos voluptatibus tempora?',
-    githubLink: '',
+    githubLink: 'https://spaceshooter-game.netlify.app/',
     liveUrl: '',
     languages: ['JavaScript', 'PhaserJS', 'Webpack'],
   },
   {
-    pics: '/images/youtupeClone.png',
+    pics: '/images/youtube-clone.png',
     alt: 'youtube',
     title: 'YouTube Clone',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam. Unde dolores delectus soluta, nesciunt quisquam repudiandae vitae iste nobis beatae, ipsam at doloribus. Sapiente consectetur dolore rerum nam.Sint hic velit tempora reprehenderit qui? Vero nesciunt quasi nulla saepe commodi aut ullam fugiat error molestias iusto! Quia architecto placeat rem nostrum commodi, possimus quis corrupti dignissimos voluptatibus tempora?',
@@ -55,8 +55,8 @@ const projects = [
     alt: 'intuit',
     title: 'Intuit Clone',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam. Unde dolores delectus soluta, nesciunt quisquam repudiandae vitae iste nobis beatae, ipsam at doloribus. Sapiente consectetur dolore rerum nam.Sint hic velit tempora reprehenderit qui? Vero nesciunt quasi nulla saepe commodi aut ullam fugiat error molestias iusto! Quia architecto placeat rem nostrum commodi, possimus quis corrupti dignissimos voluptatibus tempora?',
-    githubLink: '',
-    liveUrl: '',
+    githubLink: 'https://github.com/abruzy/HTML-Forms',
+    liveUrl: 'https://rawcdn.githack.com/abruzy/HTML-Forms/08e547354d4edf7aa2c569549dbc976689eeb9c0/index.html',
     languages: ['HTML5', 'CSS3'],
   },
 ];
