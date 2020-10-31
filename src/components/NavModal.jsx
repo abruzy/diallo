@@ -17,7 +17,7 @@ function NavModal({ modalIsOpen, setModalIsOpen }) {
         overlay: {
           position: 'fixed',
           top: 0,
-          left: '100px',
+          left: 0,
           right: 0,
           bottom: 0,
         },
