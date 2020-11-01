@@ -69,12 +69,12 @@ function Modall({
         </div>
         <p className="text-justify">{description}</p>
 
-        <div className="flex justify-center items-center mt-1">
-          <a href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-3 md:hidden`}>
+        <div className="flex justify-between items-center mt-1">
+          <a href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-2 w-40 md:hidden`}>
             See live
             <img src="/vectors/live.svg" alt="see live" className="pl-2" />
           </a>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} md:hidden`}>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} w-40 md:hidden`}>
             See Source
             <img src="/vectors/source.png" alt="source" className="pl-2" />
           </a>
