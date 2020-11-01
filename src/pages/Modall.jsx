@@ -39,7 +39,7 @@ function Modall({
           maxWidth: '100%',
           outline: 'none',
           padding: '25px 20px',
-          height: 'max-content',
+          // height: 'max-content',
         },
       }}
     >

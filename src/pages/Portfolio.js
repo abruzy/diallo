@@ -71,7 +71,7 @@ function Portfolio() {
     <>
       <section id="portfolio" className="works py-20">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-medium text-center mb-10">My Recent Works</h2>
+          <h2 className="text-4xl font-bold text-center mb-10">My Recent Works</h2>
 
           <div className="grid md:grid-cols-2 px-5 lg:grid-cols-3 col-gap-6 row-gap-5">
             {

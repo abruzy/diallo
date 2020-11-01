@@ -27,7 +27,7 @@ function About() {
   return (
     <section id="about" className="about pb-20 px-5">
       <div className="intro pt-16 flex flex-col items-center">
-        <h2 className="text-4xl font-medium text-center mb-5">About me</h2>
+        <h2 className="text-4xl font-bold text-center mb-5">About me</h2>
         <p className="max-w-3xl mx-auto text-xl text-center text-normal text-fade-gray">
           I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
           don’t hestiate to contact me.
