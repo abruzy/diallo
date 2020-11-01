@@ -30,7 +30,7 @@ const projects = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam. Unde dolores delectus soluta, nesciunt quisquam repudiandae vitae iste nobis beatae, ipsam at doloribus. Sapiente consectetur dolore rerum nam.Sint hic velit tempora reprehenderit qui? Vero nesciunt quasi nulla saepe commodi aut ullam fugiat error molestias iusto! Quia architecto placeat rem nostrum commodi, possimus quis corrupti dignissimos voluptatibus tempora?',
     githubLink: 'https://github.com/abruzy/facebook-clone',
     liveUrl: 'https://owl-social.herokuapp.com/',
-    languages: ['Ruby on rails', 'PostgreSQL', 'HTML/CSS', 'Devise Gem', 'RSpec', 'Capybara', 'Omniauth'],
+    languages: ['Ruby on rails', 'PostgreSQL', 'HTML/CSS', 'RSpec', 'Omniauth'],
   },
   {
     pics: '/images/space-shooter.png',

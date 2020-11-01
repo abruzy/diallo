@@ -31,7 +31,7 @@ function Modall({
           border: '1px solid #ebecf0',
           boxShadow: '0px 48px 48px rgba(37, 47, 137, 0.08)',
           background: '#fff',
-          margin: '2rem auto',
+          margin: '1rem auto',
           overflow: 'auto',
           WebkitOverflowScrolling: 'touch',
           borderRadius: '8px',

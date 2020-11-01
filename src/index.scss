@@ -92,4 +92,11 @@ input:focus, button:focus, textarea:focus {
   grid-template-columns: 60% 20% 20%;
 }
 
+.content {
+  @media only screen and (max-width: 600px) {
+    width: 90vw;
+    max-width: 100%;
+  }
+}
+
 @import "tailwindcss/utilities";
