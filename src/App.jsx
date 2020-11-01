@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Header from './components/Header';
-import Portfolio from './components/Portfolio';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './pages/Header'
+import Portfolio from './pages/Portfolio';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Footer from './pages/Footer';
 
 import './App.scss';
 
