@@ -37,9 +37,10 @@ function Modall({
           borderRadius: '8px',
           width: '40vw',
           maxWidth: '100%',
+          minWidth: '340px',
           outline: 'none',
           padding: '25px 20px',
-          // height: 'max-content',
+          height: 'max-content',
         },
       }}
     >
@@ -47,26 +48,37 @@ function Modall({
         <div className="h-auto">
           <img src={imageUrl} alt="" className="object-cover max-w-full" />
         </div>
-        <div className="project-info pt-8 items-center">
+        <div className="project-info pt-6 items-center">
           <h2 className="text-2xl font-semibold">
             {title}
           </h2>
 
-          <a href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-3`}>
+          <a href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-3 hidden lg:flex`}>
             See live
             <img src="/vectors/live.svg" alt="see live" className="pl-2" />
           </a>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" type="button" className={modalClassNames}>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} hidden lg:flex`}>
             See Source
             <img src="/vectors/source.png" alt="source" className="pl-2" />
           </a>
         </div>
-        <div className="flex flex-wrap items-center my-4 text-xs">
+        <div className="flex flex-wrap items-center my-2 text-xs">
           {
             techStack.map(tech => <span key={tech} className="py-1 px-2 m-1 bg-light-green rounded">{tech}</span>)
           }
         </div>
         <p className="text-justify">{description}</p>
+
+        <div className="flex justify-center items-center mt-1">
+          <a href={liveUrl} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} mr-3 md:hidden`}>
+            See live
+            <img src="/vectors/live.svg" alt="see live" className="pl-2" />
+          </a>
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" type="button" className={`${modalClassNames} md:hidden`}>
+            See Source
+            <img src="/vectors/source.png" alt="source" className="pl-2" />
+          </a>
+        </div>
       </div>
     </Modal>
   );
