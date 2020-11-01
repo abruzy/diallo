@@ -9,11 +9,8 @@ function Header() {
       <header className="banner sm:min-h-screen">
         <NavBar />
         <div className="lg:pt-56 pt-32 px-5 flex flex-col justify-center items-center">
-          <h1 className="text-5xl font-bold text-center">
-            <span className="tracking-normal">Hey there. I’m  Abubakar.</span>
-            <br className="hidden lg:flex" />
-            <span className="text-normal-green tracking-wide">I’m a software developer</span>
-          </h1>
+          <h1 className="text-4xl font-bold text-center tracking-normal">Hey there. I'm Abubakar.</h1>
+          <h1 className="text-4xl font-bold text-center text-normal-green tracking-wide">I'm a software developer</h1>
           <p className="lg:max-w-3xl mx-auto my-4 text-xl text-center">
             I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
             don’t hestiate to contact me.
