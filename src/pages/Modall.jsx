@@ -32,7 +32,7 @@ function Modall({
           boxShadow: '0px 48px 48px rgba(37, 47, 137, 0.08)',
           background: '#fff',
           margin: '1rem auto',
-          overflow: 'auto',
+          overflow: 'hidden',
           WebkitOverflowScrolling: 'touch',
           borderRadius: '8px',
           width: '40vw',
@@ -44,6 +44,9 @@ function Modall({
         },
       }}
     >
+      <button type="button" className="close close-modal absolute text-5xl transform rotate-45 cursor-pointer" onClick={() => setModalIsOpen(false)}>
+        +
+      </button>
       <div className="content-area">
         <div className="h-auto">
           <img src={imageUrl} alt="" className="object-cover max-w-full" />

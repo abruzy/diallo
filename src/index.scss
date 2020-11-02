@@ -87,6 +87,11 @@ input:focus, button:focus, textarea:focus {
   color: #67798e;
 }
 
+.close-modal {
+  top: -16px;
+  right: 10px;
+}
+
 .project-info {
   display: grid;
   grid-template-columns: 60% 20% 20%;
