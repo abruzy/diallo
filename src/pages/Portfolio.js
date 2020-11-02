@@ -17,7 +17,7 @@ const projects = [
   {
     pics: '/images/newsweek-clone.png',
     alt: 'newsweek',
-    title: 'Newsweek Clone',
+    title: 'Newsweek',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam. Unde dolores delectus soluta, nesciunt quisquam repudiandae vitae iste nobis beatae, ipsam at doloribus. Sapiente consectetur dolore rerum nam.Sint hic velit tempora reprehenderit qui? Vero nesciunt quasi nulla saepe commodi aut ullam fugiat error molestias iusto! Quia architecto placeat rem nostrum commodi, possimus quis corrupti dignissimos voluptatibus tempora?',
     githubLink: 'https://github.com/abruzy/newsweek-clone',
     liveUrl: 'https://rawcdn.githack.com/abruzy/newsweek-clone/b7cfb0020030ce6f20debd6995fb4dff8b852215/index.html',
@@ -26,7 +26,7 @@ const projects = [
   {
     pics: '/images/facebook-login.png',
     alt: 'fakebook',
-    title: 'FakeBook Replica',
+    title: 'FakeBook',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eligendi magnam. Unde dolores delectus soluta, nesciunt quisquam repudiandae vitae iste nobis beatae, ipsam at doloribus. Sapiente consectetur dolore rerum nam.Sint hic velit tempora reprehenderit qui? Vero nesciunt quasi nulla saepe commodi aut ullam fugiat error molestias iusto! Quia architecto placeat rem nostrum commodi, possimus quis corrupti dignissimos voluptatibus tempora?',
     githubLink: 'https://github.com/abruzy/facebook-clone',
     liveUrl: 'https://owl-social.herokuapp.com/',
