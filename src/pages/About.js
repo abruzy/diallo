@@ -29,7 +29,7 @@ function About() {
       <div className="intro pt-16 flex flex-col items-center">
         <h2 className="text-4xl font-bold text-center mb-5">About me</h2>
         <p className="max-w-3xl mx-auto text-xl text-center text-normal text-fade-gray">
-          I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
+          I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded,
           don’t hestiate to contact me.
         </p>
         <a href="https://docs.google.com/document/d/1M_TyXPYW_L7ClD506XA37VeqX-8xGiOpTLbj9NDGfyQ/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
