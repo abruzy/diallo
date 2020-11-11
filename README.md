@@ -19,7 +19,7 @@
 
 ### ✨ [Demo]()
 
-<img alt="screenshot" src="" />
+<img alt="screenshot" src="./abubakardiallo.png" />
 
 A web development portfolio built with reactjs.
 
