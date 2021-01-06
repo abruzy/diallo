@@ -24,6 +24,7 @@ function Contact() {
             method="POST"
             action="/#contact/?success=true"
             data-netlify="true"
+            className="lg:col-span-4"
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className="grid lg:grid-cols-2 col-gap-4 row-gap-4">
