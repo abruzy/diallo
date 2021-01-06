@@ -1,11 +1,7 @@
 /* eslint-disable max-len */
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-
-const apiURL = "https://webcrape.herokuapp.com/sendMessage/abruzy";
 
 function Contact() {
-  const [requesting, setRequesting] = useState(false);
   const [success, setSuccess] = useState(false);
 
   useEffect(() => {
@@ -13,31 +9,6 @@ function Contact() {
       setSuccess(true);
     }
   }, []);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setRequesting(true);
-
-    const firstName = e.target.firstname.value;
-    const lastName = e.target.lastname.value;
-    const email = e.target.email.value;
-    const message = e.target.value;
-
-    try {
-      const { data } = await axios.post(apiURL, {
-        firstName,
-        lastName,
-        email,
-        message,
-      });
-      console.log(data);
-      // console.log(JSON.stringify(data, null, 2));
-    } catch (error) {
-      throw new Error(error);
-    } finally {
-      setRequesting(false);
-    }
-  };
 
   return (
     <>
@@ -92,11 +63,6 @@ function Contact() {
               >
                 Get in touch
               </button>
-              {requesting && (
-                <small className="bg-indigo-600 p-3 my-4 text-white ml-2 rounded">
-                  Processing
-                </small>
-              )}
             </div>
           </form>
         </div>
